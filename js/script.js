@@ -52,22 +52,22 @@ var postalIcon = L.icon({
 });
 
 
-var prattMarker = L.marker([40.691158,-73.963100], {icon: prattIcon}).addTo(map) 
-	.bindPopup('Pratt! I come here every week.');
+var prattMarker = L.marker([40.691158,-73.963100], {icon: prattIcon}).bindPopup("Pratt! I come here every week.").addTo(map); 
+	
 	
 
-var homeMarker = L.marker([40.686887,-73.949153], {icon: homeIcon}).addTo(map)
-	.bindPopup('300 Quincy! I live here.'); 
+var homeMarker = L.marker([40.686887,-73.949153], {icon: homeIcon}).bindPopup("300 Quincy! I live here.").addTo(map);
+	
 	
 
 
-var officeMarker = L.marker([40.758189,-73.981983], {icon: officeIcon}).addTo(map)
-	.bindPopup('I work here');
+var officeMarker = L.marker([40.758189,-73.981983], {icon: officeIcon}).bindPopup("I work here").addTo(map);
+	
 
 var postalMarker = L.marker([40.678793,-73.950933], {icon: postalIcon
 	
-}).addTo(map)
-	.bindPopup('Closest post office');
+}).bindPopup("Closest post office").addTo(map);
+	
 
 
 
@@ -76,16 +76,17 @@ var circle = L.circle([40.746926,-73.945386],800,{
 	stroke: 0,
 	fillCollor: '#f03',
 	fillOpacity: 0.5
-}) .addTo(map)
-.bindPopup("Court Square");
+}).bindPopup("Court Square").addTo(map);
+
 
 var circle = L.circle([40.710372,-74.007657],800,{
 	color: 'rgba(52, 131, 184, 0.6)',
 	stroke: 0,
 	fillCollor: '#f03',
 	fillOpacity: 0.5
-}) .addTo(map)
-.bindPopup("Fulton");
+	
+}).bindPopup("Fulton").addTo(map);
+
 
 
 var polygon = L.polygon([
@@ -105,11 +106,11 @@ var polygon = L.polygon([
 	stroke: 0,
 	fillCollor: '#f03',
 	fillOpacity: 0.5
-	}) .addTo(map)
+	}).bindPopup("Prospect Park 20 mins walk").addTo(map);
 
-.bindPopup('Prospect Park 20 mins walk');
 
-var polygon = L.polygon([
+
+var polygon1 = L.polygon([
 	[40.800485,-73.958132],
 	[40.796944,-73.949249],
 	[40.764448,-73.973024],
@@ -120,6 +121,6 @@ var polygon = L.polygon([
 	stroke: 0,
 	fillCollor: '#f03',
 	fillOpacity: 0.5
-	}) .addTo(map)
+	}).bindPopup("Central Park 20 mins walk").addTo(map);
 
-.bindPopup('Central Park 20 mins walk');
+
